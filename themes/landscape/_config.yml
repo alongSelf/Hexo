@@ -1,36 +1,39 @@
-# Header
-menu:
-  Home: /
-  Archives: /archives
-rss: /atom.xml
+menu: #站点右上角导航栏，暂时默认，后面介绍修改
+  首页: /
+  存档: /archives
+  php: /php
+  文字: /lang
+  关于: /about
 
-# Content
-excerpt_link: Read More
-fancybox: true
+  
 
-# Sidebar
-sidebar: right
-widgets:
+widgets: #站点右边栏，暂时默认，后面介绍修改和添加
+- search
 - category
-- tag
 - tagcloud
-- archive
-- recent_posts
+- weibo
+- blogroll
 
-# display widgets at the bottom of index pages (pagination == 2)
-index_widgets:
-# - category
-# - tagcloud
-# - archive
 
-# widget behavior
-archive_type: 'monthly'
-show_count: false
+excerpt_link: 阅读全文 #替换为中文
 
-# Miscellaneous
-google_analytics:
-favicon: /favicon.png
-twitter:
-google_plus:
-fb_admins:
-fb_app_id:
+plugins: 
+
+
+twitter: #右边栏要显示twitter展示的话，需要在此设置
+  username: moxie198
+  show_replies: false
+  tweet_count: 5
+
+addthis: #SNS分享，身在天朝，当然用“百度分享”，暂时默认，后面会介绍
+  enable: true
+  pubid:
+  facebook: true
+  twitter: true
+  google: true
+  pinterest: true
+
+fancybox: true #图片效果，默认
+
+google_analytics: #要使用google_analytics进行统计的话，这里需要配置ID，暂时默认，后面介绍
+rss:  #生成RSS，需要配置路径，暂时默认，后面介绍
